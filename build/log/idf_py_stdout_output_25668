@@ -1,0 +1,69 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 1 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\hello_p4\build\hello_p4.elf C:\Espressif\frameworks\esp-idf-v5.5.1\hello_p4\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x17 (CHIP_USB_UART_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4fc18df4
+Core1 Saved PC:0x4fc058e0
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x164c
+load:0x4ff29ed0,len:0xdfc
+load:0x4ff2cbd0,len:0x336c
+entry 0x4ff29eda
+[0;32mI (27) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec  3 2025 15:25:52[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v1.3[0m
+[0;32mI (31) boot: efuse block revision: v0.3[0m
+[0;32mI (34) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32p4: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0a418h ( 42008) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001a440 vaddr=30100000 size=00044h (    68) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=0001a48c vaddr=4ff00000 size=05b8ch ( 23436) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=00020020 vaddr=40000020 size=194a8h (103592) map[0m
+[0;32mI (127) esp_image: segment 4: paddr=000394d0 vaddr=4ff05b8c size=092e4h ( 37604) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=000427bc vaddr=4ff0ee80 size=01f78h (  8056) load[0m
+[0;32mI (140) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (154) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (165) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     hello_p4[0m
+[0;32mI (168) app_init: App version:      v5.5.1[0m
+[0;32mI (172) app_init: Compile time:     Dec  3 2025 15:25:37[0m
+[0;32mI (177) app_init: ELF file SHA256:  3a3733bec...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (185) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (189) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (193) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (197) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (203) heap_init: At 4FF12560 len 00028A60 (162 KiB): RAM[0m
+[0;32mI (208) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (214) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (219) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (224) heap_init: At 30100044 len 00001FBC (7 KiB): TCM[0m
+[0;32mI (230) spi_flash: detected chip: gd[0m
+[0;32mI (232) spi_flash: flash io: dio[0m
+[0;33mW (235) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (248) main_task: Started on CPU0[0m
+[0;32mI (258) main_task: Calling app_main()[0m
+[0;32mI (258) MAIN: Starting ONE-SHOT Multithread Test![0m
+[0;32mI (258) INT: Finished, time = 3 ms (sum=4165125152)[0m
+[0;32mI (268) main_task: Returned from app_main()[0m
+[0;32mI (268) FLOAT: Finished, time = 4 ms (x=3.547)[0m
+[0;32mI (268) MON: Waiting for all tasks to finish...[0m
+[0;32mI (1268) IO: Finished, time = 999 ms[0m
+[0;32mI (1268) MON: ==== SUMMARY (one run) ====[0m
+[0;32mI (1268) MON:  INT   : 3 ms[0m
+[0;32mI (1268) MON:  FLOAT : 4 ms[0m
+[0;32mI (1268) MON:  IO    : 999 ms[0m
+[0;32mI (1268) MON:  Max time (bottleneck) = 999 ms[0m
+[0;32mI (1268) MON: ===========================[0m
